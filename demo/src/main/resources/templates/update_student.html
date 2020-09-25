@@ -20,9 +20,15 @@
 
         <input type="hidden" th:field="*{id}"/>
 
-        <input type="text" th:field="*{name}" class="form-control mb-4 col-4">
+        <div class="form-group">
+            <label for="text">Student Name:</label>
+            <input type="text" th:field="*{name}" placeholder="Student Name" class="form-control mb-4 col-4">
+        </div>
 
-        <input type="number" th:field="*{age}" class="form-control mb-4 col-4">
+        <div class="form-group">
+            <label for="number">Student Age:</label>
+            <input type="number" th:field="*{age}" placeholder="Student Age" class="form-control mb-4 col-4">
+        </div>
 
         <button type="submit" class="btn btn-info col-2">Update Student</button>
 
